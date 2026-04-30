@@ -1,0 +1,20 @@
+Module Module1
+    Sub Main()
+        Dim age As Integer
+        Dim note As Double
+
+        Console.Write("Entrez votre âge : ")
+        age = Integer.Parse(Console.ReadLine())
+
+        Console.Write("Entrez votre note : ")
+        note = Double.Parse(Console.ReadLine())
+
+        If note > 12 And age > 18 Then
+            Console.WriteLine("Félicitations, vous avez votre permis de conduite")
+        Else
+            Console.WriteLine("Revenez plus tard")
+        End If
+
+        Console.ReadLine()
+    End Sub
+End Module
